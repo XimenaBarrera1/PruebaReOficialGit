@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using gitDefinitivo.Pages;
 using Microsoft.Maui.Controls;
 
 namespace gitDefinitivo;
@@ -24,5 +25,20 @@ namespace gitDefinitivo;
     }
 
 
+    private void GoToCafePage(object sender, EventArgs e)
+    {
+
+        NavigationToPage(new Cafe());
+
+        OcultarDetalles();
+    }
+
+    private void GoToFutbolPage(object sender, EventArgs e)
+    {
+
+        NavigationToPage(new Futbol());
+
+        OcultarDetalles();
+    }
 
 }
