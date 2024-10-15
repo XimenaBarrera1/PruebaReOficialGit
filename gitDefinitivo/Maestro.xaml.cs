@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using gitDefinitivo.Pages;
 using Microsoft.Maui.Controls;
 
 namespace gitDefinitivo;
@@ -21,6 +22,14 @@ namespace gitDefinitivo;
     public static void OcultarDetalles()
     {
         App.FlyoutPage.IsPresented = false;
+    }
+
+    private void GoToPaisesPage(object sender, EventArgs e)
+    {
+
+        NavigationToPage(new Paises());
+
+        OcultarDetalles();
     }
 
 
